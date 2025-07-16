@@ -66,6 +66,9 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/space.png
 # alacritty run
 bindsym $mod+Return exec --no-startup-id alacritty
 
+# thunar
+bindsym $mod+t exec --no-startup-id thunar
+
 # kill focused window
 bindsym $mod+q kill
 
@@ -183,10 +186,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -205,13 +208,13 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 # bar {
-#         status_command i3status
-# 	# status_command i3blocks -c ~/.config/i3blocks/config
+#       # status_command i3status
+# 	status_command i3blocks -c ~/.config/i3blocks/config
 # 	position top
 # }
 
 # Custome keys
-bindsym $mod+b exec chromium
+bindsym $mod+b exec brave-browser
 bindsym $mod+Shift+s exec --no-startup-id sh -c 'file=~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && scrot -s "$file" && notify-send "📸 Screenshot saved" "$file"'
 
 

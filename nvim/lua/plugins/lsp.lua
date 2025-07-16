@@ -230,6 +230,7 @@ return {
 				--   },
 				-- },
 			},
+			intelephense = {},
 		}
 
 		-- Ensure the servers and tools above are installed
@@ -249,6 +250,9 @@ return {
 		vim.list_extend(ensure_installed, {
 			"stylua", -- Used to format Lua code
 			"prettier", -- Used for format html, css code
+			"pretty-php", -- Used to format PHP code
+			"blade-formatter", -- Used to format Blade templates
+			"alejandra", -- Nix code formatter
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

@@ -10,9 +10,12 @@ return {
 			-- Conform will run the first available formatter
 			javascript = { "deno_fmt", "prettier", stop_after_first = true },
 			typescript = { "deno_fmt", "prettier", stop_after_first = true },
+			php = { "pretty-php" },
+			blade = { "blade-formatter" },
 			html = { "prettier" },
 			css = { "prettier" },
 			markdown = { "deno_fmt" },
+			nix = { "alejandra" },
 		},
 		format_on_save = {
 			-- These options will be passed to conform.format()

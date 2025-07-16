@@ -61,3 +61,7 @@ vim.opt.foldenable = true -- folding yoqilgan bo'lishi uchun
 
 -- Hide cmd
 -- vim.opt.cmdheight = 0
+
+-- Github copilot
+-- vim.g.copilot_no_tab_map = true -- Tab tugmasini boshqa maqsadda ishlatsangiz
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { expr = true, silent = true })

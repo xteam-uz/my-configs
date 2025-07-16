@@ -2,7 +2,7 @@
 local opts = { noremap = true, silent = true }
 
 -- Float Oil window
-vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc = "Open Parent Directory In Oil" })
+vim.keymap.set("n", "\\", "<cmd>Oil --float<CR>", { desc = "Open Parent Directory In Oil" })
 
 -- Save file
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>", { noremap = true, silent = true })
