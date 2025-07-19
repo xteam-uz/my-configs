@@ -23,7 +23,7 @@ Discover the power of a personalized, efficient development environment with ilo
 <h3 align="center"><b>Examples</b></h3>
 -->
 
-<img src="./assets/debian-bspwm.png" alt="Debian neofetch" align="center">
+<img src="./assets/de.png" alt="Debian neofetch" align="center">
 
 - **Operatsion Tizim:** Debian 12
 - **Terminal:** Alacritty
