@@ -43,6 +43,10 @@ super + d
 	rofi -show drun
 	#dmenu_run
 
+# bemoji
+super + shift + b
+	bemoji -t -n -p
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
