@@ -30,6 +30,9 @@ XF86MonBrightnessDown
 super + Return
 	alacritty
 
+super + shift + t
+	time
+
 # browser
 super + b
 	/usr/bin/firefox-esr
@@ -39,7 +42,7 @@ super e
 	/usr/bin/thunar
 
 # program launcher
-super + d
+super + @space
 	rofi -show drun
 	#dmenu_run
 
