@@ -39,9 +39,13 @@ super e
 	/usr/bin/thunar
 
 # program launcher
-super + @space
+super + d
 	rofi -show drun
 	#dmenu_run
+
+# bemoji
+super + shift + b
+	bemoji -t -n -p
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -49,7 +53,7 @@ super + Escape
 
 # sceenshot
 super + shift + s
-	shutter
+	shutter --min_at_startup -e
 
 #
 # bspwm hotkeys
